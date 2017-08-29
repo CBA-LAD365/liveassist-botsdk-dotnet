@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+
+namespace Cafex.LiveAssist.Bot.Impl
+{
+
+    /*
+    {
+        "request": {
+            "skill": "my_skill",
+            "preChatLines" : {"line":["line one", "line 2"]}
+        }
+    }
+    */
+
+    internal class ChatRequest
+    {
+        [JsonProperty(PropertyName = "request")]
+        Request request = new Request();
+
+        internal ChatRequest(ChatSpec chatSpec)
+        {
+            request.Skill = chatSpec.Skill;
+            
+            if (chatSpec.Transcript != null && chatSpec.Transcript.Count > 0)
+            {
+                List<string> lines = new List<string>();
+                foreach (TranscriptLine line in chatSpec.Transcript)
+                {
+                    lines.Add(line.Encode());
+                }
+
+                request.PreChatLines = new PreChatLines()
+                {
+                    Lines = lines.ToArray()
+                };
+                
+            }
+        }
+    }
+
+    internal class Request
+    {
+       [JsonProperty(PropertyName = "skill", NullValueHandling = NullValueHandling.Ignore)]
+       internal String Skill { get; set; }
+
+       [JsonProperty(PropertyName = "preChatLines", NullValueHandling = NullValueHandling.Ignore)]
+       internal PreChatLines PreChatLines { get; set; }
+    }
+
+    internal class PreChatLines
+    {
+        [JsonProperty(PropertyName = "line", NullValueHandling = NullValueHandling.Ignore)]
+        internal String[] Lines { get; set; }
+    }
+}

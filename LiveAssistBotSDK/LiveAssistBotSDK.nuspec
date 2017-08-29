@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>LiveAssistBotSDK</title>
+    <authors>CaféX</authors>
+    <licenseUrl>https://raw.githubusercontent.com/cafexcomms/liveassist-botsdk-dotnet/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://www.liveassistfor365.com/en/support/knowledge-base/chat-bots/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/cafexcomms/liveassist-botsdk-dotnet/master/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>CaféX Live Assist Bot SDK for chat escalation</summary>
+    <description>LiveAssistBotSDK is an SDK that allows for the escalation of Bot interactions to an appropriately skilled human Live Assist Agent</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>bot chat cafex LiveAssist</tags>
+  </metadata>
+</package>
