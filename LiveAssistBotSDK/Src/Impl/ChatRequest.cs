@@ -9,6 +9,7 @@ namespace Cafex.LiveAssist.Bot.Impl
     {
         "request": {
             "skill": "my_skill",
+            "language" : "en-US",
             "preChatLines" : {"line":["line one", "line 2"]}
         }
     }
@@ -22,6 +23,7 @@ namespace Cafex.LiveAssist.Bot.Impl
         internal ChatRequest(ChatSpec chatSpec)
         {
             request.Skill = chatSpec.Skill;
+            request.Language = chatSpec.Language;
             
             if (chatSpec.Transcript != null && chatSpec.Transcript.Count > 0)
             {
@@ -47,6 +49,9 @@ namespace Cafex.LiveAssist.Bot.Impl
 
        [JsonProperty(PropertyName = "preChatLines", NullValueHandling = NullValueHandling.Ignore)]
        internal PreChatLines PreChatLines { get; set; }
+
+        [JsonProperty(PropertyName = "language", NullValueHandling = NullValueHandling.Ignore)]
+        internal String Language { get; set; }
     }
 
     internal class PreChatLines
