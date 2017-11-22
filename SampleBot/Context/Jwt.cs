@@ -15,11 +15,12 @@ namespace EscalationBot.Context
         /// <summary>
         /// X509 Certificate, with public and private keys.
         /// </summary>
-        static string certBase64 = "__CHANGE_ME__"; // Contact CafeX to obtain certificate.
+        static string certBase64 = "__CHANGE_ME__";
 
 
         /// <summary>
-        /// Create a JWT using provided parameters and inbuilt public key.
+        /// Create a JWT using provided context data and sign using private key from certBase64.
+        /// Note: The matching public must be provisioned to Live Assist via the Live Assist Management Portal 
         /// </summary>
         /// <param name="contextId"> ID for the context data, as provided by Live Assist Chat SDK</param>
         /// <param name="contextData">Context data, provided by Chat visitor </param>
@@ -33,26 +34,12 @@ namespace EscalationBot.Context
             };
 
             JWT.DefaultSettings.JsonMapper = new NewtonsoftMapper();
+
             var cert = new X509Certificate2(Convert.FromBase64String(certBase64), pass);
             var privateKey = cert.GetRSAPrivateKey();
-
 
             string token = JWT.Encode(payload, privateKey, JwsAlgorithm.RS256);
             return token;
         }
-
-        public static void ExportCert(X509Certificate2 cert, string filePath)
-        {
-            var base64Cert = Convert.ToBase64String(cert.Export(X509ContentType.SerializedCert));
-            System.IO.StreamWriter file = new System.IO.StreamWriter(filePath);
-            file.WriteLine(base64Cert);
-            file.Close();
-        }
-
-        public static string PublicKey()
-        {
-            var cert = new X509Certificate2(Convert.FromBase64String(certBase64), pass);
-            return Convert.ToBase64String(cert.PublicKey.EncodedKeyValue.RawData);
-        }
-    }
+    }   
 }
