@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace Cafex.LiveAssist.Bot
 {
@@ -16,10 +17,14 @@ namespace Cafex.LiveAssist.Bot
     /// must be updated.
     /// </remarks>
     [Serializable()]
+    [DataContract]
     public class ChatContext
     {
-        public string SessionUrl { get; set; }
-        public string NextEvents { get; set; }
+        [DataMember]
+        internal string SessionUrl { get; set; }
+
+        [DataMember]
+        internal string NextEvents { get; set; }
 
         public ChatContext(string sessionUrl, string nextEvents)
         {
