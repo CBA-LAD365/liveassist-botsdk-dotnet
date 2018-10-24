@@ -11,8 +11,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>CaféX Live Assist Bot SDK for chat escalation</summary>
     <description>LiveAssistBotSDK is an SDK that allows for the escalation of Bot interactions to an appropriately skilled human Live Assist Agent</description>
-    <releaseNotes>Added new 'ChatSpec' property 'Language', with default value 'en-US'. This property provides a hint to Live Assist when returning canned messages.</releaseNotes>
-    <copyright>Copyright 2017</copyright>
+    <releaseNotes>Fixed bug preventing serialization and deserialization of ChatContext objects.</releaseNotes>
+    <copyright>Copyright 2017, 2018</copyright>
     <tags>bot chat cafex LiveAssist</tags>
   </metadata>
 </package>
