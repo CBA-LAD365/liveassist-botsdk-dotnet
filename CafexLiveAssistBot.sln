@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveAssistBotSDK", "LiveAssistBotSDK\LiveAssistBotSDK.csproj", "{C945295E-97DD-4796-8315-DAD87EB920E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBot", "SampleBot\SampleBot.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{1B859643-34BD-48D6-AFEA-D759AFB101B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B859643-34BD-48D6-AFEA-D759AFB101B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B859643-34BD-48D6-AFEA-D759AFB101B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B859643-34BD-48D6-AFEA-D759AFB101B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B859643-34BD-48D6-AFEA-D759AFB101B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6D5CE2D-3026-41F0-99FA-087FEF2EDD43}
 	EndGlobalSection
 EndGlobal
