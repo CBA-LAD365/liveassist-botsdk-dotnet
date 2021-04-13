@@ -4,15 +4,15 @@
     <id>$id$</id>
     <version>$version$</version>
     <title>LiveAssistBotSDK</title>
-    <authors>CaféX</authors>
+    <authors>Communication Business Avenue, Inc.</authors>
     <licenseUrl>https://raw.githubusercontent.com/cafexcomms/liveassist-botsdk-dotnet/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://www.liveassistfor365.com/en/support/knowledge-base/chat-bots/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/cafexcomms/liveassist-botsdk-dotnet/master/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>CaféX Live Assist Bot SDK for chat escalation</summary>
+    <summary>CBA Live Assist Bot SDK for chat escalation</summary>
     <description>LiveAssistBotSDK is an SDK that allows for the escalation of Bot interactions to an appropriately skilled human Live Assist Agent</description>
     <releaseNotes>Fixed bug preventing serialization and deserialization of ChatContext objects.</releaseNotes>
-    <copyright>Copyright 2017, 2018</copyright>
-    <tags>bot chat cafex LiveAssist</tags>
+    <copyright>Copyright 2017, 2021</copyright>
+    <tags>bot chat cba LiveAssist</tags>
   </metadata>
 </package>

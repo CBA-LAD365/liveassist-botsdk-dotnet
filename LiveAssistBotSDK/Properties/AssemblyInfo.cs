@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Cafex")]
 [assembly: AssemblyProduct("LiveAssistBotSDK")]
-[assembly: AssemblyCopyright("Copyright © CaféX Communications Inc. 2017, 2018")]
+[assembly: AssemblyCopyright("Copyright © Communication Business Avenue, Inc. 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

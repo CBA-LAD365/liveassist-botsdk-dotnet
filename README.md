@@ -1,5 +1,5 @@
-# CaféX Live Assist BOT SDK
-The CaféX Live Assist SDK provides a means for an automated chat endpoint (a bot) to escalate a conversation such that the visitor can interact with a (human) agent in CaféX Live Assist.
+# CBA Live Assist BOT SDK
+The CBA Live Assist SDK provides a means for an automated chat endpoint (a bot) to escalate a conversation such that the visitor can interact with a (human) agent in CBA Live Assist.
 
 The SDK is designed to be used server-side in a .Net environment.
 
