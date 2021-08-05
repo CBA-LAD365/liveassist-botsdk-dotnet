@@ -46,14 +46,14 @@ namespace Cafex.LiveAssist.Bot.Impl
 
     internal class Request
     {
-       [JsonProperty(PropertyName = "skill", NullValueHandling = NullValueHandling.Ignore)]
-       internal String Skill { get; set; }
+        [JsonProperty(PropertyName = "skill", NullValueHandling = NullValueHandling.Ignore)]
+        internal String Skill { get; set; }
 
-       [JsonProperty(PropertyName = "preChatLines", NullValueHandling = NullValueHandling.Ignore)]
-       internal PreChatLines PreChatLines { get; set; }
+        [JsonProperty(PropertyName = "preChatLines", NullValueHandling = NullValueHandling.Ignore)]
+        internal PreChatLines PreChatLines { get; set; }
 
-       [JsonProperty(PropertyName = "language", NullValueHandling = NullValueHandling.Ignore)]
-       internal String Language { get; set; }
+        [JsonProperty(PropertyName = "language", NullValueHandling = NullValueHandling.Ignore)]
+        internal String Language { get; set; }
 
         [JsonProperty(PropertyName = "interactionTimeout", NullValueHandling = NullValueHandling.Ignore)]
         internal int InteractionTimeout { get; set; }
