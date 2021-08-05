@@ -10,6 +10,7 @@ namespace Cafex.LiveAssist.Bot.Impl
         "request": {
             "skill": "my_skill",
             "language" : "en-US",
+            "interactionTimeout" : 120
             "preChatLines" : {"line":["line one", "line 2"]}
         }
     }
@@ -24,7 +25,8 @@ namespace Cafex.LiveAssist.Bot.Impl
         {
             request.Skill = chatSpec.Skill;
             request.Language = chatSpec.Language;
-            
+            request.InteractionTimeout = 120;
+
             if (chatSpec.Transcript != null && chatSpec.Transcript.Count > 0)
             {
                 List<string> lines = new List<string>();
@@ -50,8 +52,11 @@ namespace Cafex.LiveAssist.Bot.Impl
        [JsonProperty(PropertyName = "preChatLines", NullValueHandling = NullValueHandling.Ignore)]
        internal PreChatLines PreChatLines { get; set; }
 
-        [JsonProperty(PropertyName = "language", NullValueHandling = NullValueHandling.Ignore)]
-        internal String Language { get; set; }
+       [JsonProperty(PropertyName = "language", NullValueHandling = NullValueHandling.Ignore)]
+       internal String Language { get; set; }
+
+        [JsonProperty(PropertyName = "interactionTimeout", NullValueHandling = NullValueHandling.Ignore)]
+        internal int InteractionTimeout { get; set; }
     }
 
     internal class PreChatLines
