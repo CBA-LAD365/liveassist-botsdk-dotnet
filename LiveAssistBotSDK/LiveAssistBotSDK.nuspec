@@ -5,9 +5,9 @@
     <version>$version$</version>
     <title>LiveAssistBotSDK</title>
     <authors>Communication Business Avenue, Inc.</authors>
-    <licenseUrl>https://raw.githubusercontent.com/cafexcomms/liveassist-botsdk-dotnet/master/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/CBA-LAD365/liveassist-botsdk-dotnet/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://www.liveassistfor365.com/en/support/knowledge-base/chat-bots/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/cafexcomms/liveassist-botsdk-dotnet/master/logo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/CBA-LAD365/liveassist-botsdk-dotnet/master/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>CBA Live Assist Bot SDK for chat escalation</summary>
     <description>LiveAssistBotSDK is an SDK that allows for the escalation of Bot interactions to an appropriately skilled human Live Assist Agent</description>
