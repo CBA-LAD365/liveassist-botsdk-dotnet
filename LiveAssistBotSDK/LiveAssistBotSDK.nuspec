@@ -5,7 +5,7 @@
     <version>$version$</version>
     <title>LiveAssistBotSDK</title>
     <authors>Communication Business Avenue, Inc.</authors>
-    <licenseUrl>https://raw.githubusercontent.com/CBA-LAD365/liveassist-botsdk-dotnet/master/LICENSE.txt</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://www.liveassistfor365.com/en/support/knowledge-base/chat-bots/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/CBA-LAD365/liveassist-botsdk-dotnet/master/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
